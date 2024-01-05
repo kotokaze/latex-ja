@@ -1,0 +1,64 @@
+% Uncomment if (u)pLaTeX
+% \RequirePackage{plautopatch}
+
+\documentclass[
+  % uplatex,
+  % dvipdfmx,
+  % twocolumn,balance,
+]{report}
+
+% A4 : width 21cm, height 29.7cm
+\usepackage[
+  a4paper,
+  textheight=21.7cm,
+  top=3cm,
+  left=2cm,
+  right=2cm,
+  headheight=15pt,
+]{geometry}
+
+\input{lualatex.preamble}
+\input{glossaries}
+
+% JP font override
+% \jfontspec{BIZ UD Mincho}
+
+\addbibresource{References.bib}
+
+\renewcommand\baselinestretch{1.5}
+% \linespread{1.5}
+
+% Paragraph with line break
+\newcommand{\parbr}[1]{\paragraph{#1}\mbox{}\newline\indent}
+
+% Subparagraph with line break
+\newcommand{\subparbr}[1]{\subparagraph{#1}\mbox{}\newline\indent}
+
+% --- Title ---
+% \usepackage{style.sty}
+
+\title{Title}
+\author{Author~Name~\thanks{College~of~Information~Science and~Engineering, Hoge~University}}
+\date{\today}
+
+% --- Document ---
+\begin{document}
+  \maketitle
+
+  \include{chapters/0-abstruct}
+
+  % Depth for Table of Contents index
+  % \setcounter{tocdepth}{3}
+  \tableofcontents
+
+  \include{chapters/1-introduction}
+  \include{chapters/2-related_work}
+  \include{chapters/3-proposed_method}
+  \include{chapters/4-experimentation}
+  \include{chapters/5-conclusion}
+  \include{chapters/6-acknowledgements}
+
+  \printbibliography[title=References]
+  % \printglossaries[]
+  % \printnoidxglossaries[]
+\end{document}

@@ -1,0 +1,29 @@
+\usepackage[%
+  automake,% automake package
+  toc=false,% add glossary to table of contents
+  abbreviations,% create 'abbreviations' glossary
+  postdot,% insert dot after descriptions
+%   record,% use .bib with bib2gls
+]{glossaries-extra}
+% \glossariesextrasetup{}
+
+\makeglossaries[]
+% \makenoidxglossaries[]
+\setabbreviationstyle{long-short}
+
+\newglossaryentry{duck}{%
+  name=duck,
+  description={a waterbird with webbed feet},
+}
+
+\newabbreviation{osrf}{OSRF}{%
+  Open Source Robotics Foundation
+}
+
+\newabbreviation{ros2}{ROS 2}{%
+  Robot Operating System 2
+}
+
+\newacronym{http}{HTTP}{%
+  Hypertext Transfer Protocol
+}
