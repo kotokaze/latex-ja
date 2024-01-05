@@ -1,0 +1,36 @@
+{
+  "editor.wordBasedSuggestions": "allDocuments",
+  "editor.wordWrapColumn": 120,
+
+  // "cloudlatex.enabled": true,
+  // "cloudlatex.autoCompile": true,
+  // "cloudlatex.outDir": "out",
+
+  "latex-workshop.intellisense.citation.backend": "biblatex",
+  "latex-workshop.latex.outDir": "out",
+  "latex-workshop.linting.lacheck.enabled": true,
+  "latex-workshop.showContextMenu": true,
+  "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.bibtex-format.trailingComma": true,
+  // "latex-workshop.docker.enabled": true,
+  // "latex-workshop.docker.image.latex": "kotokaze/texlive:latest",
+  "latex-workshop.intellisense.unimathsymbols.enabled": true,
+  "latex-workshop.linting.chktex.enabled": true,
+  "latex-workshop.mathpreviewpanel.cursor.enabled": true,
+  "latex-workshop.latex.autoClean.run": "onFailed",
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+
+  "[tex]": {
+    "editor.wordWrap": "bounded",
+  },
+  "[latex]": {
+    "editor.wordWrap": "bounded",
+  },
+  "[bibtex]": {
+    "editor.wordWrap": "bounded",
+  },
+  "cSpell.words": [
+  ],
+}

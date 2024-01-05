@@ -1,0 +1,52 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+	"name": "TexLive",
+	"dockerComposeFile": "compose.yml",
+	"service": "app",
+	"workspaceFolder": "/ws",
+
+	// Use this environment variable if you need to bind mount your local source code into a new container.
+	"remoteEnv": {
+		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+		},
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"configureZshAsDefaultShell": true,
+			"nonFreePackages": true
+		},
+		"ghcr.io/devcontainers/features/git-lfs:1": {
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"cloudlatex.cloudlatex",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.copilot-labs",
+				"GitHub.vscode-pull-request-github",
+				"James-Yu.latex-workshop",
+				"mhutchie.git-graph",
+				"ms-azuretools.vscode-docker",
+				"mutantdino.resourcemonitor",
+				"streetsidesoftware.code-spell-checker",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.vscodeintellicode-completions"
+			]
+		}
+	}
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "docker --version",
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
